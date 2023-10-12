@@ -1,0 +1,26 @@
+{
+  "name": "tp_01",
+  "version": "1.0.0",
+  "description": "Primer TP de node",
+  "main": "index.js",
+  "scripts": {
+    "start": "node Index.js",
+    "otro": "node ej01.js && node ej02.js",
+    "Ej01": "node ej01.js",
+    "Ej02": "node ej02.js",
+    "Ej03": "node ej03.js",
+    "Ej04": "node ej04.js",
+    "Ej05": "node ej05.js",
+    "Ej06": "node ej06.js",
+    "Ej07": "node ej07.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gabriel Chediex Viner",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "country-codes-list": "^1.6.10",
+    "currency-map-country": "^1.0.12",
+    "express": "^4.18.2"
+  }
+}
