@@ -1,0 +1,236 @@
+2023-05-22T11:34:09.351Z: Error al cargar los objetos de la base de datos en GetAll():RequestError: Incorrect syntax near '*'.
+2023-05-22T11:34:09.355Z: se obtuvieron todos los datos del GetAll() exitosamente
+2023-05-22T11:36:07.040Z: Error al cargar los objetos de la base de datos en GetAll():RequestError: Incorrect syntax near '*'.
+2023-05-22T11:36:07.041Z: se obtuvieron todos los datos del GetAll() exitosamente
+2023-05-22T11:36:17.750Z: Error al cargar los objetos de la base de datos en GetAll():RequestError: Incorrect syntax near '*'.
+2023-05-22T11:36:17.753Z: se obtuvieron todos los datos del GetAll() exitosamente
+2023-05-22T11:38:36.477Z: se obtuvieron todos los datos del GetAll() exitosamente
+2023-05-22T11:38:48.155Z: Error al cargar los objetos de la base de datos en GetAll():RequestError: Incorrect syntax near '*'.
+2023-05-22T11:38:48.157Z: se obtuvieron todos los datos del GetAll() exitosamente
+2023-05-22T11:38:53.968Z: Error al cargar los objetos de la base de datos en GetAll():RequestError: Incorrect syntax near '*'.
+2023-05-22T11:38:53.970Z: se obtuvieron todos los datos del GetAll() exitosamente
+2023-05-22T11:38:54.913Z: Error al cargar los objetos de la base de datos en GetAll():RequestError: Incorrect syntax near '*'.
+2023-05-22T11:38:54.917Z: se obtuvieron todos los datos del GetAll() exitosamente
+2023-05-22T11:38:55.098Z: Error al cargar los objetos de la base de datos en GetAll():RequestError: Incorrect syntax near '*'.
+2023-05-22T11:38:55.101Z: se obtuvieron todos los datos del GetAll() exitosamente
+2023-05-22T11:39:07.905Z: Error al cargar los objetos de la base de datos en GetAll():RequestError: Incorrect syntax near '*'.
+2023-05-22T11:39:07.908Z: se obtuvieron todos los datos del GetAll() exitosamente
+2023-05-22T11:39:58.439Z: Error al cargar los objetos de la base de datos en GetAll():RequestError: Incorrect syntax near '*'.
+2023-05-22T11:39:58.441Z: se obtuvieron todos los datos del GetAll() exitosamente
+2023-05-22T11:40:00.943Z: se obtuvieron todos los datos del GetAll() exitosamente
+2023-05-22T11:40:04.562Z: se obtuvieron todos los datos del GetAll() exitosamente
+2023-05-22T11:40:53.547Z: Error al cargar los objetos de la base de datos en GetAll():RequestError: Incorrect syntax near 'by'.
+2023-05-22T11:40:53.548Z: se obtuvieron todos los datos del GetAll() exitosamente
+2023-05-22T11:40:59.333Z: Error al cargar los objetos de la base de datos en GetAll():RequestError: Incorrect syntax near 'by'.
+2023-05-22T11:40:59.336Z: se obtuvieron todos los datos del GetAll() exitosamente
+2023-05-22T11:41:01.611Z: se obtuvieron todos los datos del GetAll() exitosamente
+2023-05-22T11:43:25.899Z: se obtuvieron todos los datos del GetAll() exitosamente
+2023-05-22T11:45:00.589Z: se obtuvieron todos los datos del GetAll() exitosamente
+2023-05-22T11:45:00.585Z: Error al cargar los objetos de la base de datos en GetAll():RequestError: Incorrect syntax near 'acs'.
+2023-05-22T11:45:07.324Z: se obtuvieron todos los datos del GetAll() exitosamente
+2023-05-22T11:45:25.136Z: Error al cargar los objetos de la base de datos en GetAll():RequestError: Incorrect syntax near ''.
+2023-05-22T11:45:25.138Z: se obtuvieron todos los datos del GetAll() exitosamente
+2023-05-22T11:45:36.950Z: se obtuvieron todos los datos del GetAll() exitosamente
+2023-05-22T11:47:14.072Z: se obtuvieron todos los datos del GetAll() exitosamente
+2023-05-22T11:47:34.513Z: se obtuvieron todos los datos del GetAll() exitosamente
+2023-05-22T11:49:37.005Z: se obtuvieron todos los datos del GetAll() exitosamente
+2023-05-22T11:49:40.226Z: se obtuvieron todos los datos del GetAll() exitosamente
+2023-05-22T11:49:43.188Z: se obtuvieron todos los datos del GetAll() exitosamente
+2023-05-22T11:50:24.741Z: Error al cargar los objetos de la base de datos en GetAll():RequestError: Incorrect syntax near the keyword 'asc'.
+2023-05-22T11:50:24.744Z: se obtuvieron todos los datos del GetAll() exitosamente
+2023-05-22T11:50:31.090Z: se obtuvieron todos los datos del GetAll() exitosamente
+2023-05-22T11:50:33.203Z: Error al cargar los objetos de la base de datos en GetAll():RequestError: Incorrect syntax near '*'.
+2023-05-22T11:50:33.205Z: se obtuvieron todos los datos del GetAll() exitosamente
+2023-05-22T11:51:14.247Z: Error al cargar los objetos de la base de datos en GetAll():RequestError: Incorrect syntax near '/'.
+2023-05-22T11:51:14.251Z: se obtuvieron todos los datos del GetAll() exitosamente
+2023-05-22T11:51:40.838Z: se obtuvieron todos los datos del GetAll() exitosamente
+2023-05-22T11:51:40.836Z: Error al cargar los objetos de la base de datos en GetAll():RequestError: Incorrect syntax near '/'.
+2023-05-22T11:51:43.219Z: Error al cargar los objetos de la base de datos en GetAll():RequestError: Incorrect syntax near '*'.
+2023-05-22T11:51:43.220Z: se obtuvieron todos los datos del GetAll() exitosamente
+2023-05-22T11:52:45.378Z: se obtuvieron todos los datos del GetAll() exitosamente
+2023-05-22T11:52:45.376Z: Error al cargar los objetos de la base de datos en GetAll():RequestError: Invalid column name 'false'.
+2023-05-22T11:53:01.200Z: Error al cargar los objetos de la base de datos en GetAll():RequestError: Invalid column name 'false'.
+2023-05-22T11:53:01.201Z: se obtuvieron todos los datos del GetAll() exitosamente
+2023-05-22T11:53:17.056Z: se obtuvieron todos los datos del GetAll() exitosamente
+2023-05-22T11:53:38.458Z: se obtuvieron todos los datos del GetAll() exitosamente
+2023-05-22T11:53:50.440Z: se obtuvieron todos los datos del GetAll() exitosamente
+2023-05-22T11:53:58.940Z: se obtuvieron todos los datos del GetAll() exitosamente
+2023-05-22T11:54:08.034Z: se obtuvieron todos los datos del GetAll() exitosamente
+2023-05-22T11:55:15.062Z: Error al cargar los objetos de la base de datos en GetAll():RequestError: Incorrect syntax near '*'.
+2023-05-22T11:55:15.066Z: se obtuvieron todos los datos del GetAll() exitosamente
+2023-05-22T11:55:34.725Z: se obtuvieron todos los datos del GetAll() exitosamente
+2023-05-22T11:55:34.723Z: Error al cargar los objetos de la base de datos en GetAll():RequestError: Incorrect syntax near '*'.
+2023-05-22T11:55:58.460Z: Error al cargar los objetos de la base de datos en GetAll():RequestError: Incorrect syntax near '*'.
+2023-05-22T11:55:58.462Z: se obtuvieron todos los datos del GetAll() exitosamente
+2023-05-22T11:56:01.802Z: Error al cargar los objetos de la base de datos en GetAll():RequestError: Incorrect syntax near '*'.
+2023-05-22T11:56:01.805Z: se obtuvieron todos los datos del GetAll() exitosamente
+2023-05-22T11:56:19.739Z: Error al cargar los objetos de la base de datos en GetAll():RequestError: Incorrect syntax near '*'.
+2023-05-22T11:56:19.741Z: se obtuvieron todos los datos del GetAll() exitosamente
+2023-05-22T11:56:36.066Z: se obtuvieron todos los datos del GetAll() exitosamente
+2023-05-22T11:57:40.498Z: se pudo crear el objeto de la base de datos exitosamente
+2023-05-22T11:57:45.794Z: se obtuvieron todos los datos del GetAll() exitosamente
+2023-05-22T11:57:50.644Z: se pudo borrar el objeto de la base de datos exitosamente
+2023-05-22T12:36:57.589Z: se obtuvieron todos los datos del GetAll() exitosamente
+2023-05-22T12:37:03.434Z: se obtuvieron todos los datos del GetAll() exitosamente
+2023-05-22T12:42:17.367Z: se obtuvieron todos los datos del GetAll() exitosamente - 
+2023-05-22T12:43:20.917Z: se obtuvieron todos los datos del GetAll() exitosamente - 
+2023-05-22T12:43:23.572Z: se obtuvieron todos los datos del GetAll() exitosamente - 
+2023-05-22T12:43:31.652Z: se obtuvieron todos los datos del GetAll() exitosamente - 
+2023-05-22T12:44:37.454Z: se obtuvieron todos los datos del GetAll() exitosamente - 
+2023-05-22T12:44:46.400Z: Error al cargar los objetos de la base de datos en GetAll(): - 
+2023-05-22T12:44:46.403Z: se obtuvieron todos los datos del GetAll() exitosamente - 
+2023-05-22T12:44:50.874Z: se obtuvieron todos los datos del GetAll() exitosamente - 
+2023-05-22T12:44:57.803Z: se obtuvieron todos los datos del GetAll() exitosamente - 
+2023-05-22T12:45:05.062Z: Error al cargar los objetos de la base de datos en GetAll(): - 
+2023-05-22T12:45:05.064Z: se obtuvieron todos los datos del GetAll() exitosamente - 
+2023-05-22T12:46:00.999Z: Error al cargar los objetos de la base de datos en GetAll(): - 
+2023-05-22T12:46:01.000Z: se obtuvieron todos los datos del GetAll() exitosamente - 
+2023-05-22T12:46:07.345Z: se obtuvieron todos los datos del GetAll() exitosamente - 
+2023-05-22T12:46:07.342Z: Error al cargar los objetos de la base de datos en GetAll(): - 
+2023-05-22T12:46:34.397Z: se obtuvieron todos los datos del GetAll() exitosamente - 
+2023-05-22T12:47:02.766Z: se obtuvieron todos los datos del GetAll() exitosamente - 
+2023-05-22T12:47:19.869Z: se obtuvieron todos los datos del GetAll() exitosamente - 
+2023-05-22T12:47:32.767Z: Error al cargar los objetos de la base de datos en GetAll(): - 
+2023-05-22T12:47:32.769Z: se obtuvieron todos los datos del GetAll() exitosamente - 
+2023-05-22T12:48:07.113Z: se obtuvieron todos los datos del GetAll() exitosamente - 
+2023-05-22T12:48:14.455Z: se obtuvieron todos los datos del GetAll() exitosamente - 
+2023-05-22T12:48:17.181Z: se obtuvieron todos los datos del GetAll() exitosamente - 
+2023-05-22T12:48:44.022Z: se obtuvieron todos los datos del GetAll() exitosamente - 
+2023-05-22T12:48:45.765Z: se obtuvieron todos los datos del GetAll() exitosamente - 
+2023-05-22T12:48:49.628Z: se obtuvieron todos los datos del GetAll() exitosamente - 
+2023-05-22T12:48:57.557Z: se obtuvieron todos los datos del GetAll() exitosamente - 
+2023-05-22T12:49:38.501Z: se obtuvieron todos los datos del GetAll() exitosamente - 
+2023-05-22T12:49:51.528Z: se obtuvieron todos los datos del GetAll() exitosamente - 
+2023-05-22T12:49:58.884Z: Error al cargar los objetos de la base de datos en GetAll(): - 
+2023-05-22T12:49:58.886Z: se obtuvieron todos los datos del GetAll() exitosamente - 
+2023-05-22T12:57:59.489Z: se obtuvieron todos los datos del GetAll() exitosamente - 
+2023-05-22T13:01:45.918Z: se obtuvieron todos los datos del GetAll() exitosamente - undefined
+2023-05-22T13:01:53.204Z: se obtuvieron todos los datos del GetById() exitosamente - undefined
+2023-05-22T13:02:32.644Z: se obtuvieron todos los datos del GetById() exitosamente - undefined
+2023-05-22T13:02:33.531Z: se obtuvieron todos los datos del GetById() exitosamente - undefined
+2023-05-22T13:02:33.705Z: se obtuvieron todos los datos del GetById() exitosamente - undefined
+2023-05-22T13:06:37.655Z: Error al cargar los objetos de la base de datos en GetAll(): - RequestError: Incorrect syntax near 'asd'.
+2023-05-22T13:06:37.660Z: se obtuvieron todos los datos del GetAll() exitosamente - undefined
+2023-05-22T13:07:24.302Z: Error al cargar los objetos de la base de datos en GetAll(): - Incorrect syntax near 'aaa'.
+2023-05-22T13:07:24.307Z: se obtuvieron todos los datos del GetAll() exitosamente - undefined
+2023-05-22T13:46:25.180Z: se obtuvieron todos los datos del GetAll() exitosamente - undefined
+2023-05-22T13:46:29.195Z: se obtuvieron todos los datos del GetAll() exitosamente - undefined
+2023-05-22T13:46:33.115Z: se obtuvieron todos los datos del GetAll() exitosamente - undefined
+2023-05-22T13:46:35.659Z: se obtuvieron todos los datos del GetAll() exitosamente - undefined
+2023-05-22T13:46:43.955Z: se obtuvieron todos los datos del GetAll() exitosamente - undefined
+2023-05-29T11:31:03.202Z: Error al cargar los objetos de la base de datos en GetAll(): - Login failed for user 'Pizzas'.
+2023-05-29T11:31:03.202Z: se obtuvieron todos los datos del GetAll() exitosamente - undefined
+2023-05-29T11:31:08.969Z: se obtuvieron todos los datos del GetAll() exitosamente - undefined
+2023-05-29T11:31:08.968Z: Error al cargar los objetos de la base de datos en GetAll(): - Login failed for user 'Pizzas'.
+2023-05-29T11:36:34.219Z: se obtuvieron todos los datos del GetAll() exitosamente - undefined
+2023-05-29T11:36:34.219Z: Error al cargar los objetos de la base de datos en GetAll(): - Login failed for user 'Pizzas'.
+2023-05-29T11:36:34.919Z: se obtuvieron todos los datos del GetAll() exitosamente - undefined
+2023-05-29T11:36:34.919Z: Error al cargar los objetos de la base de datos en GetAll(): - Login failed for user 'Pizzas'.
+2023-05-29T11:36:36.266Z: Error al cargar los objetos de la base de datos en GetAll(): - Login failed for user 'Pizzas'.
+2023-05-29T11:36:36.266Z: se obtuvieron todos los datos del GetAll() exitosamente - undefined
+2023-05-29T11:37:00.059Z: se obtuvieron todos los datos del GetAll() exitosamente - undefined
+2023-05-29T11:37:00.059Z: Error al cargar los objetos de la base de datos en GetAll(): - Login failed for user 'Pizzas'.
+2023-05-29T11:37:40.787Z: Error al cargar los objetos de la base de datos en GetAll(): - Login failed for user 'Pizzas'.
+2023-05-29T11:37:40.787Z: se obtuvieron todos los datos del GetAll() exitosamente - undefined
+2023-05-29T11:37:46.962Z: Error al cargar los objetos de la base de datos en GetAll(): - Login failed for user 'Pizzas'.
+2023-05-29T11:37:46.963Z: se obtuvieron todos los datos del GetAll() exitosamente - undefined
+2023-05-29T11:38:05.756Z: Error al cargar los objetos de la base de datos en GetAll(): - Login failed for user 'Pizzas'.
+2023-05-29T11:38:05.756Z: se obtuvieron todos los datos del GetAll() exitosamente - undefined
+2023-05-29T11:39:31.732Z: Error al cargar los objetos de la base de datos en GetAll(): - Login failed for user 'Pizzas'.
+2023-05-29T11:39:31.732Z: se obtuvieron todos los datos del GetAll() exitosamente - undefined
+2023-05-29T11:40:13.771Z: se obtuvieron todos los datos del GetAll() exitosamente - undefined
+2023-05-29T11:40:13.771Z: Error al cargar los objetos de la base de datos en GetAll(): - Login failed for user 'Pizzas'.
+2023-05-29T11:40:32.884Z: se obtuvieron todos los datos del GetAll() exitosamente - undefined
+2023-05-29T11:40:32.884Z: Error al cargar los objetos de la base de datos en GetAll(): - Login failed for user 'Pizzas'.
+2023-05-29T11:40:43.112Z: se obtuvieron todos los datos del GetAll() exitosamente - undefined
+2023-05-29T11:40:43.112Z: Error al cargar los objetos de la base de datos en GetAll(): - Login failed for user 'Pizzas'.
+2023-05-29T11:43:55.278Z: se obtuvieron todos los datos del GetAll() exitosamente - undefined
+2023-05-29T11:43:55.286Z: se obtuvieron todos los datos del GetAll() exitosamente - undefined
+2023-05-29T11:56:40.369Z: Error al obtener las pizzas: desde Index.js/GetbyId(109) - undefined
+2023-06-05T12:01:30.566Z: Error al cargar los objetos de la base de datos en GetById():ConnectionError: Login failed for user 'Pizzzas'. - undefined
+2023-06-05T12:03:24.407Z: Error al cargar los objetos de la base de datos en GetById():ConnectionError: Login failed for user 'Pizzzas'. - undefined
+2023-06-05T12:25:52.962Z: Error al cargar los objetos de la base de datos en GetAll(): - Incorrect syntax near the keyword 'asc'.
+2023-06-05T12:49:47.563Z: Error al insertar los objetos de la base de datos en Insert():RequestError: Validation failed for parameter 'pIdPizza'. Invalid string. - undefined
+2023-06-05T13:27:30.401Z: Error al actualizar los objetos de la base de datos en Update():RequestError: Incorrect syntax near the keyword 'WHERE'. - undefined
+2023-06-05T13:28:32.704Z: Error al actualizar los objetos de la base de datos en Update():RequestError: Incorrect syntax near the keyword 'WHERE'. - undefined
+2023-06-05T13:30:10.780Z: Error al actualizar los objetos de la base de datos en Update():RequestError: Incorrect syntax near the keyword 'WHERE'. - undefined
+2023-06-06T11:35:36.743Z: Error al cargar los objetos de la base de datos en GetAll(): - Login failed for user 'Pizzas'.
+2023-06-06T11:36:05.197Z: Error al cargar los objetos de la base de datos en GetAll(): - Login failed for user 'Pizzas'.
+2023-07-03T12:31:28.116Z: Error al cargar los objetos de la base de datos en GetAll(): - id is not defined
+2023-07-03T12:31:38.321Z: Error al cargar los objetos de la base de datos en GetAll(): - id is not defined
+2023-07-03T12:32:24.436Z: Error al cargar los objetos de la base de datos en GetAll(): - id is not defined
+2023-07-03T12:33:19.251Z: Error al cargar los objetos de la base de datos en GetAll(): - id is not defined
+2023-07-03T12:34:01.219Z: Error al cargar los objetos de la base de datos en GetAll(): - id is not defined
+2023-07-03T12:34:52.102Z: Error al cargar los objetos de la base de datos en GetAll(): - id is not defined
+2023-07-03T12:36:16.431Z: Error al cargar los objetos de la base de datos en GetAll(): - id is not defined
+2023-07-03T12:36:36.370Z: Error al cargar los objetos de la base de datos en GetAll(): - id is not defined
+2023-07-03T12:36:47.690Z: Error al cargar los objetos de la base de datos en GetAll(): - id is not defined
+2023-07-03T12:39:41.975Z: Error al cargar los objetos de la base de datos en GetAll(): - id is not defined
+2023-07-03T12:39:57.238Z: Error al cargar los objetos de la base de datos en GetAll(): - id is not defined
+2023-07-03T12:40:53.072Z: Error al cargar los objetos de la base de datos en GetAll(): - id is not defined
+2023-07-03T12:42:41.143Z: Error al cargar los objetos de la base de datos en GetAll(): - retuid is not defined
+2023-07-03T12:42:52.194Z: Error al cargar los objetos de la base de datos en GetAll(): - retuid is not defined
+2023-07-03T13:05:22.460Z: Error al cargar los objetos de la base de datos en GetAll(): - incluirIngredientes is not defined
+2023-07-03T13:05:22.463Z: Error al cargar los objetos de la base de datos en GetAll(): - incluirIngredientes is not defined
+2023-07-03T13:05:22.468Z: Error al cargar los objetos de la base de datos en GetAll(): - incluirIngredientes is not defined
+2023-07-03T13:05:22.471Z: Error al cargar los objetos de la base de datos en GetAll(): - incluirIngredientes is not defined
+2023-07-03T13:05:22.473Z: Error al cargar los objetos de la base de datos en GetAll(): - incluirIngredientes is not defined
+2023-07-03T13:05:22.475Z: Error al cargar los objetos de la base de datos en GetAll(): - incluirIngredientes is not defined
+2023-07-03T13:05:22.476Z: Error al cargar los objetos de la base de datos en GetAll(): - incluirIngredientes is not defined
+2023-07-03T13:05:22.478Z: Error al cargar los objetos de la base de datos en GetAll(): - incluirIngredientes is not defined
+2023-07-03T13:05:22.481Z: Error al cargar los objetos de la base de datos en GetAll(): - incluirIngredientes is not defined
+2023-07-03T13:05:22.485Z: Error al cargar los objetos de la base de datos en GetAll(): - incluirIngredientes is not defined
+2023-07-03T13:16:06.032Z: Error al cargar los objetos de la base de datos en GetById():ReferenceError: svc is not defined - undefined
+2023-07-04T12:13:06.354Z: Error al cargar los objetos de la base de datos en GetAll(): - Login failed for user 'Pizzas'.
+2023-07-04T12:13:15.545Z: Error al cargar los objetos de la base de datos en GetAll(): - Login failed for user 'Pizzas'.
+2023-07-10T11:29:26.460Z: Error al refrescar el token: - Incorrect syntax near '('.
+2023-07-10T11:29:27.798Z: Error al refrescar el token: - Incorrect syntax near '('.
+2023-07-10T11:29:28.094Z: Error al refrescar el token: - Incorrect syntax near '('.
+2023-07-10T11:29:29.564Z: Error al refrescar el token: - Incorrect syntax near '('.
+2023-07-10T11:29:34.435Z: Error al refrescar el token: - Incorrect syntax near '('.
+2023-07-10T11:29:35.029Z: Error al refrescar el token: - Incorrect syntax near '('.
+2023-07-10T11:29:35.435Z: Error al refrescar el token: - Incorrect syntax near '('.
+2023-07-10T11:31:01.260Z: Error al refrescar el token: - Incorrect syntax near '('.
+2023-07-10T11:31:28.546Z: Error al refrescar el token: - Incorrect syntax near '('.
+2023-07-10T11:34:41.642Z: Error al refrescar el token: - Validation failed for parameter 'pToken'. Invalid string.
+2023-07-10T11:35:31.834Z: Error al refrescar el token: - Validation failed for parameter 'pToken'. Invalid string.
+2023-07-10T11:37:11.840Z: Error al refrescar el token: - Validation failed for parameter 'pToken'. Invalid string.
+2023-07-10T11:37:43.891Z: Error al refrescar el token: - Validation failed for parameter 'pToken'. Invalid string.
+2023-07-10T11:38:02.507Z: Error al refrescar el token: - Validation failed for parameter 'pToken'. Invalid string.
+2023-07-10T11:38:21.582Z: Error al refrescar el token: - Validation failed for parameter 'pToken'. Invalid string.
+2023-07-10T11:38:34.409Z: Error al refrescar el token: - Validation failed for parameter 'pToken'. Invalid string.
+2023-07-10T11:38:46.838Z: Error al refrescar el token: - Validation failed for parameter 'pToken'. Invalid string.
+2023-07-10T11:45:23.698Z: Error al refrescar el token: - token.toISOString is not a function
+2023-07-10T11:47:36.620Z: returnEntity - undefined
+2023-07-10T11:47:36.621Z: [object Object] - undefined
+2023-07-10T11:47:46.847Z: [object Object] - undefined
+2023-07-10T11:47:46.846Z: returnEntity - undefined
+2023-07-10T11:48:24.878Z: returnEntity - undefined
+2023-07-10T11:48:24.879Z: [object Object] - undefined
+2023-07-10T11:49:37.597Z: returnEntity - undefined
+2023-07-10T11:49:37.597Z: [object Object] - undefined
+2023-07-10T11:49:37.598Z: returnEntity - undefined
+2023-07-10T11:49:37.598Z: [object Object] - undefined
+2023-07-10T11:49:44.300Z: returnEntity - undefined
+2023-07-10T11:49:44.300Z: [object Object] - undefined
+2023-07-10T11:50:11.902Z: returnEntity - undefined
+2023-07-10T11:50:11.902Z: [object Object] - undefined
+2023-07-10T11:51:17.470Z: returnEntity - undefined
+2023-07-10T11:51:17.470Z: [object Object] - undefined
+2023-07-10T11:51:35.489Z: returnEntity - undefined
+2023-07-10T11:51:35.489Z: [object Object] - undefined
+2023-07-10T11:52:55.859Z: returnEntity - undefined
+2023-07-10T11:52:55.859Z: Error al obtener el username: - Incorrect syntax near ','.
+2023-07-10T11:52:55.859Z: null - undefined
+2023-07-10T11:53:23.968Z: [object Object] - undefined
+2023-07-10T11:53:23.968Z: returnEntity - undefined
+2023-07-10T11:54:10.006Z: returnEntity - undefined
+2023-07-10T11:54:10.006Z: [object Object] - undefined
+2023-07-10T11:55:29.470Z: returnEntity - undefined
+2023-07-10T11:55:29.470Z: [object Object] - undefined
+2023-07-10T11:55:34.327Z: returnEntity - undefined
+2023-07-10T11:55:34.327Z: [object Object] - undefined
+2023-07-11T11:48:23.767Z: Error al cargar los objetos de la base de datos en GetAll(): - Incorrect syntax near 'by'.
+2023-07-11T11:48:32.101Z: Error al cargar los objetos de la base de datos en GetAll(): - Incorrect syntax near 'by'.
+2023-07-11T11:53:39.970Z: [object Object] - undefined
+2023-07-11T11:53:39.970Z: returnEntity - undefined
