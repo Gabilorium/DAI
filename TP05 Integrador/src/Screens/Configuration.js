@@ -5,7 +5,7 @@ import React, { useState, useEffect } from 'react';
 import MessageConstants from '../Constants/MessageConstants'
 import ReusableButton from '../Components/ReusableButton';
 import DataService from '../Services/DataService';
-import ModalMensaje from '../Components/ModalMessage';
+import ModalMessage from '../Components/ModalMessage';
 
 let dataService = new DataService();
 
@@ -76,7 +76,7 @@ const Configuration = () => {
                 />
                 <ReusableButton event={handleSubmit} style={styles.button}  text='enter data'/>
             </ImageBackground>
-            <ModalMensaje msg={modalMessage} modalVisible={visibleModal} setVisibleModal={setVisibleModal} success={success} />
+            <ModalMessage msg={modalMessage} modalVisible={visibleModal} setVisibleModal={setVisibleModal} success={success} />
         </SafeAreaView>
     );
 };

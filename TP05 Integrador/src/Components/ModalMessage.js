@@ -2,7 +2,7 @@ import { View, Text, Vibration, StyleSheet, Modal, Pressable } from 'react-nativ
 import React from 'react'
 import { useEffect } from 'react';
 
-export default function ModalMensaje({ msg, modalVisible, setVisibleModal, success }) {
+const ModalMessage =({ msg, modalVisible, setVisibleModal, success }) =>{
 
     useEffect(() => {
         if (modalVisible) {
@@ -105,3 +105,5 @@ const styles = StyleSheet.create({
         textAlign: 'center',
     },
 });
+
+export default ModalMessage
