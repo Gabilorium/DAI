@@ -19,10 +19,9 @@ const [subscription, setSubscription] = useState(null);
 const [visibleModal, setVisibleModal] = useState(false);
 const [success, setSuccess] = useState(false);
 const [mensajeModal, setMensajeModal] = useState('');
-const [image, setImage] = useState(null);
+const [bgImage, setBgImage] = useState(null);
 
 const _slow = () => Accelerometer.setUpdateInterval(1000);
-const _fast = () => Accelerometer.setUpdateInterval(16);
 
 const callNumber = (phone) => {
     console.log('callNumber ----> ', phone);
@@ -50,12 +49,13 @@ const _subscribe = () => {
         auxiliarX = x;
         if (accelerometerData.x < auxiliarX) {
         if ((auxiliarX - accelerometerData.x) > 0.5) {
-            let datos = await dataService.getData();
-            let telefono = datos.telefono;
+            let data = await dataService.getData();
+            console.log(da)
+            let telefono = data.telefono;
             if (telefono) {
             callNumber(telefono)
             } else {
-            setMensajeModal(MessageConstants.MSG_TELEFONO_UNDEFINED);
+            setMensajeModal(MessageConstants.MSG_UNDEFINED_PHONE);
             setVisibleModal(true)
             }
             Vibration.vibrate();
@@ -68,7 +68,7 @@ const _subscribe = () => {
             if (telefono) {
                 callNumber(telefono)
             } else {
-                setMensajeModal(MessageConstants.MSG_TELEFONO_UNDEFINED);
+                setMensajeModal(MessageConstants.MSG_UNDEFINED_PHONE);
                 setModalVisible(true)
             }
             Vibration.vibrate();
@@ -84,11 +84,13 @@ const _subscribe = () => {
     setSubscription(null);
   };
 
-  let loadBackground = async () => {
-    if(JSON.parse(await dataService.getBackground())){
-      let backgroundImage = JSON.parse(await dataService.getBackground());
-      setImage(backgroundImage.uri);
-    }    
+  const loadBackground = async () => {
+    const profile = await dataService.getData();
+    if(profile.BackgroundURI !== null)
+    {
+    //const profile = await dataService.getData();
+    setBgImage(profile.BackgroundURI);
+    }
   }
 
   useEffect(() => {
@@ -101,9 +103,9 @@ const _subscribe = () => {
 
   return (
     <SafeAreaView style={[styles.container]}>
-      <ImageBackground source={{uri: image}} style={styles.image}>
+      <ImageBackground source={bgImage ? {uri: bgImage } : null} style={styles.image}>
         <Text style={{backgroundColor:'white', fontSize: 20, width: '80%', textAlign:'center'}}>Agita el celular para llamar a tu contacto de emergencia</Text>
-        <ModalMessage mensaje={mensajeModal} modalVisible={visibleModal} setVisibleModal={setVisibleModal} success={success}/>
+        <ModalMessage msg={mensajeModal} modalVisible={visibleModal} setVisibleModal={setVisibleModal} success={success}/>
       </ImageBackground>
     </SafeAreaView>
   )

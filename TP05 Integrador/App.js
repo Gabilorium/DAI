@@ -4,11 +4,10 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import Configuration from './src/Screens/Configuration';
-import ChangeBgImage from './src/Screens/ChangeBgImage';
-import IdApp from './src/Screens/IdApp';
+import ChangeBgScreen from './src/Screens/ChangeBgScreen';
+import AboutScreen from './src/Screens/AboutScreen';
 import EmergencyCall from './src/Screens/EmergencyCall';
-import FavoriteVideoMusic from './src/Screens/FavoriteVideoMusic';
-import UserMsj from './src/Screens/UserMsg';
+import MultimediaScreen from './src/Screens/MultimediaScreen';
 
 
 const Tab = createBottomTabNavigator();
@@ -32,9 +31,6 @@ const App = () => {
               else if (route.name === 'Call') {
                 iconName = focused ? 'call' : 'call-outline';
               } 
-              else if (route.name === 'Msg') {
-                iconName = focused ? 'logo-whatsapp' : 'logo-whatsapp';
-              }
               else if(route.name === 'Barcode'){
                 iconName = focused ? 'md-barcode' : 'md-barcode-outline'
               }
@@ -45,11 +41,10 @@ const App = () => {
           })}
         >
           <Tab.Screen name="Config" component={Configuration} />
-          <Tab.Screen name="BgImage" component={ChangeBgImage}/>
-          <Tab.Screen name="Barcode" component={IdApp}/>
+          <Tab.Screen name="BgImage" component={ChangeBgScreen}/>
+          <Tab.Screen name="Barcode" component={AboutScreen}/>
           <Tab.Screen name="Call" component={EmergencyCall} />
-          <Tab.Screen name="Video" component={FavoriteVideoMusic}/>
-          <Tab.Screen name="Msg" component={UserMsj }/>
+          <Tab.Screen name="Video" component={MultimediaScreen}/>
         </Tab.Navigator>
   </NavigationContainer>
 

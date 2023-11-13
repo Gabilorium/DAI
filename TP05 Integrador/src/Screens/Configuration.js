@@ -1,26 +1,58 @@
 
 
-import { View, Text, StyleSheet, SafeAreaView, TextInput, ImageBackground } from 'react-native'
+import {Text, StyleSheet, SafeAreaView, TextInput, ImageBackground } from 'react-native'
 import React, { useState, useEffect } from 'react';
 import MessageConstants from '../Constants/MessageConstants'
 import ReusableButton from '../Components/ReusableButton';
 import DataService from '../Services/DataService';
 import ModalMessage from '../Components/ModalMessage';
 
-let dataService = new DataService();
-
 const Configuration = () => {
-    const [phone, setPhone] = useState();
-    const [urlVideo, setUrlVideo] = useState();
-    const [urlMusic, setUrlMusic] = useState();
+    const [phoneNumber, setPhoneNumber] = useState('');
+    const [videoUrl, setUrlVideo] = useState('');
+    const [musicUrl, setUrlMusic] = useState('');
     const [visibleModal, setVisibleModal] = useState(false);
     const [success, setSuccess] = useState(false);
     const [modalMessage, setModalMessage] = useState('');
-    const [image, setImage] = useState(null);
+    const [bgImage, setBgImage] = useState(null);
 
-    const handleSubmit = async () => {
-        if (phone && urlMusic && urlVideo) {
-            if (await dataService.saveData(phone, urlVideo, urlMusic)) 
+    const dataService = new DataService();
+
+    
+    /**
+     * @swfshsfxhsf
+     */
+    const loadData = async () =>{
+      const profile = await dataService.getData();
+      //const background = dataService.getBackground();
+      if(profile !== null){
+        setPhoneNumber(profile.PhoneNumber);
+        setUrlMusic(profile.VideoUrl);
+        setUrlVideo(profile.MusicUrl);
+        setBgImage(profile.BackgroundURI);
+      }
+      else{
+        setPhoneNumber('');
+        setUrlMusic('');
+        setUrlVideo('');
+        setBgImage(null);
+      }
+    }
+    
+    useEffect(() => {
+      //await dataService.getData();
+      loadData();
+    }, []);
+
+    const handleSave = async () => {
+
+      const profile = await dataService.getData();
+      profile.PhoneNumber = phoneNumber;
+      profile.VideoUrl = videoUrl;
+      profile.MusicUrl = musicUrl;
+      await dataService.saveData(profile)
+        if (phoneNumber && videoUrl && musicUrl) {
+            if (await dataService.saveData(profile)) 
             {
                 setModalMessage(MessageConstants.MSG_SAVED_DATA);
                 setSuccess(true)
@@ -36,33 +68,38 @@ const Configuration = () => {
     }
 
     const loadBackground = async () => {
-        if (JSON.parse(await dataService.getBackground())) {
-          let backgroundImage = JSON.parse(await dataService.getBackground());
-          setImage(backgroundImage.uri);
+        const profile = await dataService.getData();
+        if(profile !== null)
+        {
+        //const profile = await dataService.getData();
+        setBgImage(profile.BackgroundURI);
+        }else{
+          setBgImage(null)
         }
     }
 
     useEffect(() => {
+        //await dataService.getData();
         loadBackground();
       }, []);
 
 
     return(
         <SafeAreaView style={[styles.container]}>
-            <ImageBackground source={{ uri: image }} style={styles.image}>
+            <ImageBackground source={bgImage ? {uri: bgImage } : null} style={styles.image}>
                 <Text style={[styles.textLabel]}>Telefono</Text>
                 <TextInput
                 editable
                 style={styles.input}
                 placeholder="Enter emergency phone number"
                 keyboardType="numeric"
-                onChangeText={input => setPhone(input)}
+                onChangeText={input => setPhoneNumber(input)}
                 />
                 <Text style={[styles.textLabel]}>Video URL</Text>
                 <TextInput
                 editable
                 style={styles.input}
-                value={urlVideo}
+                value={videoUrl}
                 placeholder="Enter a video URL"
                 onChangeText={input => setUrlVideo(input)}
                 />
@@ -70,11 +107,11 @@ const Configuration = () => {
                 <TextInput
                 editable
                 style={styles.input}
-                value={urlMusic}
+                value={musicUrl}
                 placeholder="Enter a music URL"
                 onChangeText={input => setUrlMusic(input)}
                 />
-                <ReusableButton event={handleSubmit} style={styles.button}  text='enter data'/>
+                <ReusableButton event={handleSave} style={styles.button}  text='enter data'/>
             </ImageBackground>
             <ModalMessage msg={modalMessage} modalVisible={visibleModal} setVisibleModal={setVisibleModal} success={success} />
         </SafeAreaView>
@@ -109,6 +146,7 @@ const styles = StyleSheet.create({
     textLabel: {
       alignSelf: 'flex-start',
       marginLeft: '5%',
+      backgroundColor:'white',
       marginTop: 5,
       fontWeight: 'bold'
     },

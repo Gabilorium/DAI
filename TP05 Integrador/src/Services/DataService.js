@@ -1,38 +1,31 @@
-import AsyncStorage from "@react-native-async-storage/async-storage"; 
+import MessageConstants from "../Constants/MessageConstants";
+import Profile from "../models/Profile";
+import AsyncStorageUtil from "../Utils/AsyncStorageUtil";
 
 //npm i @react-native-async-storage/async-storage 
 //Definicionesdeconstantes. 
-const PHONE_KEY='PHONE';
-const VIDEO_KEY='VIDEO';
-const MUSIC_KEY='MUSIC';
-const BACKGROUND_KEY='BACKGROUND';
+const USER_PROFILE = "USER_PROFILE";
 
 export default class DataService{ 
     //Elimina las credenciales almacenadas al cerrar sesión 
     deleteData = async() => { 
         try{
-            await AsyncStorage.removeItem(PHONE_KEY); 
-            await AsyncStorage.removeItem(VIDEO_KEY); 
-            await AsyncStorage.removeItem(MUSIC_KEY); 
+            await AsyncStorageUtil.removeKey(USER_PROFILE)
         }catch(e){
-            console.log(e);
+
         }
     }; 
 
-    saveData = async(phone, video, music) => { 
+    saveData = async(profile) => { 
         //Almacena las credenciales en el asyncStorage
         try {    
-            await AsyncStorage.setItem(PHONE_KEY, phone);  
-            await AsyncStorage.setItem(VIDEO_KEY, video); 
-            await AsyncStorage.setItem(MUSIC_KEY, music); 
-            return true;
+            await AsyncStorageUtil.setObject(USER_PROFILE, profile)
         } catch(e) {    
-            console.log(e);
-            return false;
+
         }
     }; 
 
-    saveBackground = async(background) => { 
+    /*saveBackground = async(background) => { 
         //Almacena las credenciales en el asyncStorage
         try {    
             await AsyncStorage.setItem(BACKGROUND_KEY, background);  
@@ -47,13 +40,16 @@ export default class DataService{
         let storedBackground = await AsyncStorage.getItem(BACKGROUND_KEY);
         const returnValue = storedBackground; 
         return returnValue; 
-    }; 
+    }; */
 
-    getData = async() => { 
-        let storedPhone = await AsyncStorage.getItem(PHONE_KEY);
-        let storedVideo = await AsyncStorage.getItem(VIDEO_KEY);
-        let storedMusic = await AsyncStorage.getItem(MUSIC_KEY);
-        const returnValue = {'PHONE':storedPhone, 'VIDEO':storedVideo, 'MUSIC':storedMusic}; 
-        return returnValue; 
+    getData = async () => { 
+        let profile = new Profile()
+        //let returnValue;
+        try{
+            profile = await AsyncStorageUtil.getObject(USER_PROFILE, profile)
+        }catch{
+            //console.error(MessageConstants.MSG_INCOMPLETE_FIELDS)
+        }
+        return profile; 
     }; 
 } 
