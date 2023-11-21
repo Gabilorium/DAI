@@ -22,22 +22,18 @@ const Configuration = () => {
     /**
      * @swfshsfxhsf
      */
-    const loadData = async () =>{
-      const profile = await dataService.getData();
-      //const background = dataService.getBackground();
-      if(profile !== null){
+    const loadData = async () =>{   
+      try {
+        const profile = await dataService.getData();   
+
         setPhoneNumber(profile.PhoneNumber);
-        setUrlMusic(profile.VideoUrl);
-        setUrlVideo(profile.MusicUrl);
+        setUrlMusic(profile.MusicUrl);
+        setUrlVideo(profile.VideoUrl);
         setBgImage(profile.BackgroundURI);
-      }
-      else{
-        setPhoneNumber('');
-        setUrlMusic('');
-        setUrlVideo('');
-        setBgImage(null);
-      }
+    } catch (error) {
+        console.error('Error loading data:', error);
     }
+}
     
     useEffect(() => {
       //await dataService.getData();
@@ -52,8 +48,9 @@ const Configuration = () => {
       profile.MusicUrl = musicUrl;
       await dataService.saveData(profile)
         if (phoneNumber && videoUrl && musicUrl) {
-            if (await dataService.saveData(profile)) 
+            if (await dataService.saveData(profile) == true) 
             {
+                
                 setModalMessage(MessageConstants.MSG_SAVED_DATA);
                 setSuccess(true)
             } else {
@@ -91,6 +88,7 @@ const Configuration = () => {
                 <TextInput
                 editable
                 style={styles.input}
+                value={phoneNumber}
                 placeholder="Enter emergency phone number"
                 keyboardType="numeric"
                 onChangeText={input => setPhoneNumber(input)}

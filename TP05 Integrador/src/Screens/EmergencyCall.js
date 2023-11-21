@@ -1,4 +1,4 @@
-import { View, Text, SafeAreaView, StyleSheet, Linking, Alert, Platform, ImageBackground } from 'react-native'
+import {Text, SafeAreaView, StyleSheet, Linking, Alert, Platform, ImageBackground } from 'react-native'
 import React, { useState, useEffect } from 'react';
 import { Accelerometer} from 'expo-sensors';
 import { Vibration } from 'react-native';
@@ -32,15 +32,7 @@ const callNumber = (phone) => {
     else {
         phoneNumber = `tel:${phone}`;
     }
-    Linking.canOpenURL(phoneNumber)
-    .then(supported => {
-        if (!supported) {
-            Alert.alert('Phone number is not available');
-        } else {
-            return Linking.openURL(phoneNumber);
-        }
-    })
-    .catch(err => console.log(err));
+    Linking.openURL(phoneNumber)
 };
 
 const _subscribe = () => {
@@ -49,28 +41,27 @@ const _subscribe = () => {
         auxiliarX = x;
         if (accelerometerData.x < auxiliarX) {
         if ((auxiliarX - accelerometerData.x) > 0.5) {
-            let data = await dataService.getData();
-            console.log(da)
-            let telefono = data.telefono;
-            if (telefono) {
-            callNumber(telefono)
+            const profile = await dataService.getData();
+            let PhoneNumber = profile.PhoneNumber;
+            if (PhoneNumber) {
+              callNumber(PhoneNumber)
             } else {
-            setMensajeModal(MessageConstants.MSG_UNDEFINED_PHONE);
-            setVisibleModal(true)
+              setMensajeModal(MessageConstants.MSG_UNDEFINED_PHONE);
+              setVisibleModal(true)
             }
             Vibration.vibrate();
         }
         } else {
         if ((accelerometerData.x - auxiliarX) > 0.5) {
             if ((auxiliarX - accelerometerData.x) > 0.5) {
-            let datos = await dataService.getData();
-            let telefono = datos.telefono;
-            if (telefono) {
-                callNumber(telefono)
-            } else {
+              const profile = await dataService.getData();
+              let PhoneNumber = profile.PhoneNumber;
+              if (PhoneNumber) {
+                callNumber(PhoneNumber)
+              } else {
                 setMensajeModal(MessageConstants.MSG_UNDEFINED_PHONE);
                 setModalVisible(true)
-            }
+              }
             Vibration.vibrate();
           }
         }

@@ -43,12 +43,14 @@ const ChangeBgScreen = () => {
   }
 
   const TakePicture = async () => {
-    if (!camera) return
+    if (!camera) return;
+
     const photo = await camera.takePictureAsync();
-    const profile = await dataService.getData()
-    profile.BackgroundURI=(JSON.stringify(photo.uri));
-    console.log("PRofile: ",profile.BackgroundURI)
+    const profile = await dataService.getData();
+
+    profile.BackgroundURI = photo.uri;
     setBgImage(profile.BackgroundURI);
+
     await dataService.saveData(profile)
     setStartCamera(false)
   }

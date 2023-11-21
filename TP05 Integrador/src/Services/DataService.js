@@ -17,12 +17,17 @@ export default class DataService{
     }; 
 
     saveData = async(profile) => { 
-        //Almacena las credenciales en el asyncStorage
-        try {    
-            await AsyncStorageUtil.setObject(USER_PROFILE, profile)
-        } catch(e) {    
-
-        }
+            let success = false;
+            try {
+                console.log(JSON.stringify(profile))
+                console.log(USER_PROFILE)
+                await AsyncStorageUtil.setObject(USER_PROFILE, profile);
+                success = true; // Mark success if AsyncStorageUtil.setObject succeeds
+            } catch(e) {
+                // Handle any potential errors
+                console.error("Error saving data:", e);
+            }
+            return success; // Return success status
     }; 
 
     /*saveBackground = async(background) => { 
@@ -43,13 +48,12 @@ export default class DataService{
     }; */
 
     getData = async () => { 
-        let profile = new Profile()
-        //let returnValue;
-        try{
-            profile = await AsyncStorageUtil.getObject(USER_PROFILE, profile)
-        }catch{
-            //console.error(MessageConstants.MSG_INCOMPLETE_FIELDS)
+        let profile = new Profile();
+        try {
+            profile = await AsyncStorageUtil.getObject(USER_PROFILE, profile);
+        } catch (error) {
+            console.error('Error fetching profile from AsyncStorage:', error);
         }
         return profile; 
-    }; 
+    };
 } 

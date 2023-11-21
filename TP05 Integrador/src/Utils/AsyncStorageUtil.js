@@ -8,7 +8,7 @@ class AsyncStorageUtil{
     * @param {*} value
     * @returns
     */
-    setString = async (key, value) =>{
+    static async setString(key, value){
         let returnValue = false;
         try{
             await AsyncStorage.setItem(key,value);
@@ -24,7 +24,7 @@ class AsyncStorageUtil{
     * @param {*} value
     * @returns
     */
-    setObject = async (key, object) =>{
+    static async setObject(key, object){
         let returnValue = false;
         try{
             const jsonString = JSON.stringify(object)
@@ -40,7 +40,7 @@ class AsyncStorageUtil{
     * @param {*} value
     * @returns
     */
-    getString = async (key, defaultValue) =>{
+    static async getString(key, defaultValue){
         let returnValue = defaultValue;
         try{
             returnValue= await AsyncStorage.getItem(key);
@@ -55,11 +55,25 @@ class AsyncStorageUtil{
     * @param {*} value
     * @returns
     */
-    getObject = async (key, defaultValue) =>{
+    static async getObject(key, defaultValue){
         let returnValue = defaultValue;
         try{
-            const jsonString = AsyncStorageUtil.getString(key,null)
-            returnValue= ((jsonString != null) ? JSON.parse(jsonString) : defaultValue);
+            const jsonString = await AsyncStorageUtil.getString(key);
+            if (jsonString !== null) {
+                try {
+                    // Attempt to parse the retrieved data
+                    const parsedValue = JSON.parse(jsonString);
+                    
+                    if (typeof parsedValue === 'object' && parsedValue !== null) {
+                        returnValue = parsedValue;
+                    } else {
+                        console.error('Retrieved value is not a valid JSON object.');
+                    }
+                } catch (parseError) {
+                    console.error('Error parsing JSON:', parseError);
+                    console.log('Received JSON string:', jsonString);
+                }
+            }
         }catch(e){
             console.error(MessageConstants.MSG_INCOMPLETE_FIELDS, e)
         }
@@ -71,7 +85,7 @@ class AsyncStorageUtil{
     * @param {*} value
     * @returns
     */
-    removeKey = async (key) =>{
+    static async removeKey(key){
         let returnValue = true;
         try{
             await AsyncStorage.removeItem(key);
